@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set environment variables
-# source activate py2bigdl
+source activate py2bigdl
 export BIGDL_HOME=/opt/bigdl/dist-spark-2.1.1-scala-2.11.8-all-0.5.0-dist
 export SPARK_HOME=/opt/bmr/spark2
 
