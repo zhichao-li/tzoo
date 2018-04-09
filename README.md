@@ -8,9 +8,12 @@
 + BigDL 0.5.0
 
 ### Prepare Env on Baidu BMR
-* Run ```yum update -y nss curl libcurl```
-* Run ```git clone https://github.com/zhichao-li/act.git```
-* Run ```sh prepare_env.sh```
+```
+yum update -y nss curl libcurl
+git clone https://github.com/zhichao-li/act.git
+cd act
+sh prepare_env.sh
+```
 
 ### Start Notebook
 * Run ```sh start_notebook.sh```
