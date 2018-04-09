@@ -1,4 +1,4 @@
-# Deep Learning Tutorials on Apache Spark using BigDL
+# BigDL Tutorials for Strata AI Conference
 
 ### Environment required
 + Python 2.7
