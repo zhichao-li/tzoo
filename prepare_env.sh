@@ -32,8 +32,9 @@ wget http://tutorial.bj.bcebos.com/resnet50_weights_th_dim_ordering_th_kernels.h
 mkdir -p ~/.keras/datasets/mnist
 cd ~/.keras/datasets/mnist
 
-wget http://tutorial.bj.bcebos.com/mnist%2Ft10k-images-idx3-ubyte.gz
-wget http://tutorial.bj.bcebos.com/mnist%2Ft10k-labels-idx1-ubyte.gz
-wget http://tutorial.bj.bcebos.com/mnist%2Ftrain-images-idx3-ubyte.gz
-wget http://tutorial.bj.bcebos.com/mnist%2Ftrain-labels-idx1-ubyte.gz
+
+wget http://tutorial.bj.bcebos.com/mnist%2Ft10k-images-idx3-ubyte.gz -O t10k-images-idx3-ubyte.gz
+wget http://tutorial.bj.bcebos.com/mnist%2Ft10k-labels-idx1-ubyte.gz -O t10k-labels-idx1-ubyte.gz
+wget http://tutorial.bj.bcebos.com/mnist%2Ftrain-images-idx3-ubyte.gz -O train-images-idx3-ubyte.gz
+wget http://tutorial.bj.bcebos.com/mnist%2Ftrain-labels-idx1-ubyte.gz -O train-labels-idx1-ubyte.gz
 
