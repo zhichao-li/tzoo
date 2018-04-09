@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Set environment variables
+export PATH=/root/miniconda2/bin:$PATH
 source activate py2bigdl
 export BIGDL_HOME=/opt/bigdl/dist-spark-2.1.1-scala-2.11.8-all-0.5.0-dist
 export SPARK_HOME=/opt/bmr/spark2
-
 
 #setup pathes
 export PYSPARK_DRIVER_PYTHON=jupyter
@@ -40,7 +40,7 @@ ${SPARK_HOME}/bin/pyspark \
   --executor-cores 4 \
   --num-executors 2 \
   --properties-file ${BIGDL_CONF} \
-  --archives ${BIGDL_PY_ZIP} \
+  --py-files ${BIGDL_PY_ZIP} \
   --jars ${BIGDL_JAR} \
   --conf spark.driver.extraClassPath=${BIGDL_JAR}:/opt/bmr/hadoop/lib/hadoop-lzo-0.6.0.jar \
   --conf spark.executor.extraClassPath=${BIGDL_JAR} \
