@@ -17,3 +17,10 @@ sh prepare_env.sh
 
 ### Start Notebook
 * Run ```sh start_notebook.sh```
+
+### How to start tensorboard
+``` bash
+export PATH=/root/miniconda2/bin:$PATH
+source activate py2bigdl 
+tensorboard --logdir /tmp/bigdl_summaries
+```
