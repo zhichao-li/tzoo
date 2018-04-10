@@ -21,7 +21,7 @@ wget http://tutorial.bj.bcebos.com/resnet50_weights_th_dim_ordering_th_kernels.h
 
 cd /opt/bigdl/
 
-wget http://mirrors.shu.edu.cn/apache/spark/spark-1.6.3/spark-1.6.3-bin-hadoop2.6.tgz
+wget http://tutorial.bj.bcebos.com/spark-1.6.3-bin-hadoop2.6.tgz
 tar -zxvf  spark-1.6.3-bin-hadoop2.6.tgz
 
 wget http://tutorial.bj.bcebos.com/dist-spark-1.6.2-scala-2.10.5-all-0.5.0-dist.zip
