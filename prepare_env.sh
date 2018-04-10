@@ -1,4 +1,5 @@
 #!/bin/bash
+hdfs dfs -put notebooks/part4/image-net /user/root
 mkdir -p /opt/bigdl/
 cd /opt/bigdl/
 mkdir ~/.pip
