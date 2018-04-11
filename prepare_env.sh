@@ -2,7 +2,7 @@
 hdfs dfs -put notebooks/part4/image-net /user/root
 mkdir -p /opt/bigdl/
 cd /opt/bigdl/
-python ./get-pip.py
+python act/get-pip.py
 mkdir ~/.pip
 echo -e "[global]\\nindex-url = http://mirrors.aliyun.com/pypi/simple/\\n\\n[install]\\ntrusted-host=mirrors.aliyun.com\\n"  > ~/.pip/pip.conf
 

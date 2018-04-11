@@ -1,8 +1,6 @@
 #!/bin/bash
 
 # Set environment variables
-export PATH=/root/miniconda2/bin:$PATH
-source activate py2bigdl
 export BIGDL_HOME=/opt/bigdl/dist-spark-2.1.1-scala-2.11.8-all-0.5.0-dist
 export SPARK_HOME=/opt/bmr/spark2
 
