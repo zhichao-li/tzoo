@@ -10,6 +10,8 @@
 ### Prepare Env on Baidu BMR
 ```
 yum update -y nss curl libcurl
+mkdir -p /opt/bigdl
+cd /opt/bigdl
 git clone https://github.com/zhichao-li/act.git
 cd act
 sh prepare_env.sh
