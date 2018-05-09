@@ -1,8 +1,6 @@
 #!/bin/bash
-hdfs dfs -put notebooks/part4/image-net /user/root
-mkdir -p /opt/bigdl/
-cd /opt/bigdl/
-python act/get-pip.py
+
+python ./get-pip.py
 mkdir ~/.pip
 echo -e "[global]\\nindex-url = http://mirrors.aliyun.com/pypi/simple/\\n\\n[install]\\ntrusted-host=mirrors.aliyun.com\\n"  > ~/.pip/pip.conf
 
@@ -31,12 +29,3 @@ wget http://tutorial.bj.bcebos.com/mnist%2Ft10k-images-idx3-ubyte.gz -O t10k-ima
 wget http://tutorial.bj.bcebos.com/mnist%2Ft10k-labels-idx1-ubyte.gz -O t10k-labels-idx1-ubyte.gz
 wget http://tutorial.bj.bcebos.com/mnist%2Ftrain-images-idx3-ubyte.gz -O train-images-idx3-ubyte.gz
 wget http://tutorial.bj.bcebos.com/mnist%2Ftrain-labels-idx1-ubyte.gz -O train-labels-idx1-ubyte.gz
-
-mkdir ../census
-wget http://tutorial.bj.bcebos.com/census%2Fadult.data -O ../census/adult.data
-wget http://tutorial.bj.bcebos.com/census%2Fadult.test -O ../census/adult.test
-
-# create user dir and upload some data to hdfs
-sudo -u hdfs hdfs dfs -mkdir -p  /user/root
-sudo -u hdfs hdfs dfs -chown -R root /user/root
-hdfs dfs -put ../census /user/root
