@@ -19,7 +19,7 @@ sh prepare_env.sh
 
 ### How to start tensorboard
 ``` bash
-tensorboard --logdir /tmp/bigdl_summaries
+tensorboard --logdir /tmp/zoo_summaries
 ```
 
 ### SwitchyOmega for Chrome
