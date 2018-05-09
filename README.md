@@ -1,4 +1,4 @@
-# Analytics Tutorials
+# Analytics-Zoo Tutorials
 
 ### Environment required
 + Python 2.7
