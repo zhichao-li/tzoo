@@ -22,5 +22,3 @@ sh prepare_env.sh
 tensorboard --logdir /tmp/zoo_summaries
 ```
 
-### SwitchyOmega for Chrome
-http://tutorial.bj.bcebos.com/SwitchyOmega.crx
